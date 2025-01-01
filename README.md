@@ -61,7 +61,7 @@ return this.prisma.$queryRaw<Product[]>(query);
 ### Task 2: Optimization of List Products API and Add Unit Tests to All Services
 #### Implementation Details
 ##### Enhancements:
-
+* Changing some dependencies in the package.json for better performance.
 * Modified the `findAll` method to support pagination, category filtering, and a maximum limit of 30 products per page to mitigate inefficiencies and prevent system abuse.
 * Applied a dynamic where clause based on the provided category filters.
 * Indexing:
